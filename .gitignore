@@ -4,8 +4,12 @@ CV.md
 *.local.md
 .local-*
 
-# Ancien CV avec données perso
+# CV avec données perso (HTML/PDF)
+CV.html
+CV.css
+CV_Nathalie_AVRIL.pdf
 CV Nathalie_AVRIL_20240531.pdf
+
 
 # Métadonnées Windows/WSL
 *:Zone.Identifier
