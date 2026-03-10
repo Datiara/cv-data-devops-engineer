@@ -263,7 +263,7 @@ body {
   .exp-header .exp-entreprise { font-size: 10pt; }
   .exp-header .exp-periode { font-size: 9pt; }
   .formation-table { font-size: 10pt; }
-  .formation-table .periode { font-size: 9pt; }
+  .formation-table .periode { font-size: 9pt; white-space: nowrap; }
   .formation-table .etablissement { font-size: 9pt; }
   .photo {
     width: 100px;
