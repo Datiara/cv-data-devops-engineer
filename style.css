@@ -1,0 +1,224 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.4;
+  color: #2c2c2c;
+}
+.page {
+  width: 210mm;
+  height: 297mm;
+  display: flex;
+  overflow: hidden;
+}
+/* === SIDEBAR === */
+.sidebar {
+  width: 65mm;
+  background: #f0fafa;
+  padding: 4mm 4mm 3mm 7mm;
+  flex-shrink: 0;
+}
+.photo {
+  width: 28mm;
+  height: 28mm;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1.5mm auto;
+  border: 2.5px solid #5bbcb4;
+}
+.sidebar h2 {
+  color: #5bbcb4;
+  font-size: 9pt;
+  margin: 2.5mm 0 1mm 0;
+  padding-bottom: 0.3mm;
+  border-bottom: 1.5px solid #5bbcb4;
+}
+.sidebar h3 {
+  font-size: 9pt;
+  color: #3a9e96;
+  margin: 3mm 0 1mm 0;
+}
+.sidebar p, .sidebar li {
+  font-size: 8.5pt;
+  line-height: 1.35;
+  color: #444;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar ul li {
+  margin-bottom: 0.8mm;
+}
+.sidebar .skill-category {
+  margin-bottom: 0.5mm;
+}
+.sidebar .skill-category strong {
+  font-size: 7.5pt;
+  color: #2c2c2c;
+}
+.sidebar .skill-tags {
+  font-size: 6.8pt;
+  color: #555;
+  line-height: 1.25;
+}
+.sidebar .flag-icon {
+  height: 1.2em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.3mm;
+}
+.sidebar .icon-inline {
+  height: 1.2em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.3mm;
+}
+.sidebar .lang-item, .sidebar .interest-item {
+  margin-bottom: 0.3mm;
+  font-size: 7.5pt;
+}
+.main .update-date {
+  font-size: 6.5pt;
+  color: #999;
+  white-space: nowrap;
+}
+.sidebar .contact-info {
+  font-size: 8pt;
+  color: #555;
+  margin-bottom: 0.5mm;
+}
+.sidebar .contact-info a {
+  color: #3a9e96;
+  text-decoration: none;
+}
+/* === MAIN === */
+.main {
+  flex: 1;
+  padding: 4mm 7mm 2mm 5mm;
+}
+.main h1 {
+  font-size: 15pt;
+  color: #5bbcb4;
+  margin-bottom: 0.3mm;
+  letter-spacing: 0.5px;
+}
+.main .subtitle {
+  font-size: 12pt;
+  color: #555;
+  margin-bottom: 1.5mm;
+  font-weight: 600;
+}
+.main .name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.main .tagline {
+  font-size: 10pt;
+  color: #5bbcb4;
+  font-weight: 700;
+  margin-bottom: 1.5mm;
+  text-align: center;
+}
+.main h2 {
+  color: #24998f;
+  font-size: 9.5pt;
+  margin: 2mm 0 0.8mm 0;
+  padding: 1mm 2mm;
+  background: #b7e4e1;
+  border-radius: 1.5mm;
+}
+.main h3 {
+  font-size: 8.5pt;
+  color: #2c2c2c;
+  margin: 2mm 0 0.3mm 0;
+}
+.main .company {
+  font-size: 8pt;
+  color: #777;
+  margin-bottom: 0.7mm;
+}
+.main h4 {
+  font-size: 8.5pt;
+  color: #3a9e96;
+  margin: 1mm 0 0.3mm 0;
+}
+.main ul {
+  padding-left: 3.5mm;
+  margin-bottom: 0.8mm;
+}
+.main ul li {
+  margin-bottom: 0.3mm;
+  font-size: 9pt;
+  line-height: 1.45;
+}
+.main .stack {
+  font-size: 8pt;
+  color: #3a9e96;
+  font-weight: 600;
+  margin-top: 0.3mm;
+  margin-bottom: 4mm;
+}
+.profile-text {
+  font-size: 8.5pt;
+  line-height: 1.4;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 1.5mm;
+}
+/* Experience header (style C : bandeau) */
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: #f0fafa;
+  padding: 1mm 2mm;
+  border-radius: 1mm;
+  margin: 2.5mm 0 1mm 0;
+  border-left: 2.5px solid #5bbcb4;
+}
+.exp-header .exp-poste {
+  font-weight: 700;
+  font-size: 9pt;
+  color: #2c2c2c;
+}
+.exp-header .exp-entreprise {
+  font-weight: 600;
+  font-size: 8.5pt;
+  color: #3a9e96;
+}
+.exp-header .exp-periode {
+  font-size: 7.5pt;
+  color: #777;
+  white-space: nowrap;
+}
+/* Formation table */
+.formation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8pt;
+  margin-top: 0.5mm;
+  margin-bottom: 0.5mm;
+}
+.formation-table td {
+  padding: 0.5mm 1mm;
+  vertical-align: top;
+}
+.formation-table .periode {
+  width: 19mm;
+  color: #777;
+  font-size: 7pt;
+}
+.formation-table .diplome {
+  font-weight: 600;
+}
+.formation-table .etablissement {
+  color: #777;
+  font-size: 7pt;
+}
