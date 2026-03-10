@@ -24,6 +24,7 @@ Data/DevOps Engineer en reconversion après 19 ans de développement logiciel em
 | **Data Viz / BI** | Matplotlib, Dash, Power BI, Looker Studio, Apache Superset, Airbyte |
 | **Observabilité** | Grafana, logging structuré, alerting Teams |
 | **Systèmes** | Linux, Windows, Proxmox, Talos Linux |
+| **Automatisation** | Power Automate, PowerApps, SharePoint, Microsoft 365 |
 | **Gestion de projet** | GitLab (issues, boards, milestones), méthode Agile, cycle en V |
 | **IA & Productivité** | Claude Code, Perplexity — pair-programming, revue de code, architecture |
 
@@ -40,6 +41,13 @@ Data/DevOps Engineer en reconversion après 19 ans de développement logiciel em
 - Validation des données avec **Pydantic**, logging structuré, alerting Microsoft Teams
 - 220+ tests pytest (ratio couverture 69%), documentation technique avec diagrammes Mermaid
 - **Stack** : Python, Pandas, Prefect 3, SQL Server, Docker, Pydantic, GitLab CI/CD
+
+#### ⚡ Power Platform — Intégration des factures fournisseurs
+- Conception d'une **solution Power Platform** complète : **9 flux Power Automate** + **1 Canvas App** (PowerApps) pour la gestion des litiges
+- Chaîne automatisée : réception email → extraction PDF → SharePoint → SFTP → intégration ERP Sylob, avec notifications Teams et logging
+- Gestion d'**environnements DEV/PROD** avec **21 variables d'environnement**, pipeline de déploiement via **Power Platform CLI (pac)**
+- CI/CD GitLab pour l'export, la vérification et le déploiement de la solution
+- **Stack** : Power Automate, PowerApps, SharePoint, Outlook, Teams, SFTP, Power Platform CLI, GitLab CI/CD
 
 #### 🔬 Litho — Application de gestion de laboratoire
 - Développement d'une application de gestion de laboratoire sur **Frappe Framework** (36 modèles de données)
@@ -124,6 +132,7 @@ Data/DevOps Engineer en reconversion après 19 ans de développement logiciel em
 ### 📋 Autres certifications
 
 - **En cours** — AWS Solutions Architect
+- 2025 — AWS Cloud Quest: Cloud Practitioner
 - 2024 — Cloud AWS, API REST (OpenClassrooms)
 - 2022 — FreeRTOS
 - 2021 — Dispositifs médicaux UE

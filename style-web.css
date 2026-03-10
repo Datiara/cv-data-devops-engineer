@@ -1,0 +1,255 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #2c2c2c;
+  background: #f5f5f5;
+}
+.page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+}
+/* === SIDEBAR === */
+.sidebar {
+  width: 280px;
+  background: #f0fafa;
+  padding: 25px 20px;
+  flex-shrink: 0;
+}
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px auto;
+  border: 3px solid #5bbcb4;
+}
+.sidebar h2 {
+  color: #5bbcb4;
+  font-size: 12pt;
+  margin: 15px 0 8px 0;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #5bbcb4;
+}
+.sidebar h3 {
+  font-size: 10pt;
+  color: #3a9e96;
+  margin: 10px 0 5px 0;
+}
+.sidebar p, .sidebar li {
+  font-size: 10pt;
+  line-height: 1.45;
+  color: #444;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar ul li {
+  margin-bottom: 4px;
+}
+.sidebar .skill-category {
+  margin-bottom: 6px;
+}
+.sidebar .skill-category strong {
+  font-size: 9.5pt;
+  color: #2c2c2c;
+}
+.sidebar .skill-tags {
+  font-size: 8.5pt;
+  color: #555;
+  line-height: 1.4;
+}
+.sidebar .flag-icon {
+  height: 1.2em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.sidebar .icon-inline {
+  height: 1.2em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.sidebar .lang-item, .sidebar .interest-item {
+  margin-bottom: 4px;
+  font-size: 9.5pt;
+}
+.sidebar .contact-info {
+  font-size: 10pt;
+  color: #555;
+  margin-bottom: 4px;
+}
+.sidebar .contact-info a {
+  color: #3a9e96;
+  text-decoration: none;
+}
+.sidebar .contact-info a:hover {
+  text-decoration: underline;
+}
+/* === MAIN === */
+.main {
+  flex: 1;
+  padding: 25px 30px;
+}
+.main .name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.main .update-date {
+  font-size: 8pt;
+  color: #999;
+  white-space: nowrap;
+}
+.main h1 {
+  font-size: 24pt;
+  color: #5bbcb4;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+}
+.main .subtitle {
+  font-size: 14pt;
+  color: #555;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.main .tagline {
+  font-size: 14pt;
+  color: #5bbcb4;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.main h2 {
+  color: #24998f;
+  font-size: 13pt;
+  margin: 18px 0 8px 0;
+  padding: 5px 10px;
+  background: #b7e4e1;
+  border-radius: 4px;
+}
+.main h3 {
+  font-size: 10pt;
+  color: #2c2c2c;
+  margin: 12px 0 4px 0;
+}
+.main .company {
+  font-size: 9pt;
+  color: #777;
+  margin-bottom: 5px;
+}
+.main h4 {
+  font-size: 10.5pt;
+  color: #3a9e96;
+  margin: 10px 0 4px 0;
+}
+.main ul {
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+.main ul li {
+  margin-bottom: 4px;
+  font-size: 10.5pt;
+  line-height: 1.5;
+}
+.main .stack {
+  font-size: 9.5pt;
+  color: #3a9e96;
+  font-weight: 600;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+.profile-text {
+  font-size: 10.5pt;
+  line-height: 1.5;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+/* Experience header (style C : bandeau) */
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: #f0fafa;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 15px 0 6px 0;
+  border-left: 3px solid #5bbcb4;
+}
+.exp-header .exp-poste {
+  font-weight: 700;
+  font-size: 11pt;
+  color: #2c2c2c;
+}
+.exp-header .exp-entreprise {
+  font-weight: 600;
+  font-size: 10.5pt;
+  color: #3a9e96;
+}
+.exp-header .exp-periode {
+  font-size: 9pt;
+  color: #777;
+  white-space: nowrap;
+}
+/* Formation table */
+.formation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10pt;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.formation-table td {
+  padding: 4px 6px;
+  vertical-align: top;
+}
+.formation-table .periode {
+  width: 90px;
+  color: #777;
+  font-size: 9pt;
+  white-space: nowrap;
+}
+.formation-table .diplome {
+  font-weight: 600;
+}
+.formation-table .etablissement {
+  color: #777;
+  font-size: 9pt;
+}
+
+/* Mobile : sidebar au-dessus du main */
+@media screen and (max-width: 700px) {
+  .page {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .photo {
+    width: 80px;
+    height: 80px;
+  }
+  .main h1 { font-size: 18pt; }
+  .main .tagline { font-size: 11pt; }
+  .exp-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .exp-header .exp-periode {
+    white-space: normal;
+  }
+  .main .name-row {
+    flex-direction: column;
+  }
+}
