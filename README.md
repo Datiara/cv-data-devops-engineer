@@ -1,95 +1,78 @@
-# Plan d'action - Recherche d'emploi Data / DevOps Engineer
+# CV Data / DevOps Engineer
 
 > Données personnelles dans `donnees_perso.md` (non tracké Git)
 > Suivi des actions dans les [Issues GitLab](https://gitlab.com/datiara/public/cv-data-devops-engineer/-/issues)
 
 ---
 
-## Situation actuelle
+## Structure du projet
 
-- **Profil** : 20 ans XP embarqué/industriel, en reconversion Data/DevOps Engineering
-- **Formation** : Alternance Neolithe (sept 2024 → 04 sept 2026), formation Liora (ex-DataScientest)
-- **Certification visée** : RNCP 38919 "Data engineer" Niveau 7 (DataScientest)
+```
+├── index.html          CV public (sans données perso) — hébergé via GitLab/GitHub Pages
+├── style.css           Feuille de style partagée (responsive web + PDF A4)
+├── images/             Photo, drapeaux, icônes
+├── CV_public.md        CV public en Markdown (lisible sur GitLab/GitHub)
+├── .gitlab-ci.yml      Déploiement GitLab Pages
+│
+├── CV.html             CV privé avec données perso (non tracké)
+├── CV.md               CV privé en Markdown (non tracké)
+├── CV_Nathalie_AVRIL.pdf  PDF généré via weasyprint (non tracké)
+└── donnees_perso.md    Données personnelles (non tracké)
+```
+
+### Consultation en ligne
+
+- **GitLab Pages** : https://datiara.gitlab.io/public/cv-data-devops-engineer
+- **GitHub Pages** : https://datiara.github.io/cv-data-devops-engineer
+
+### Génération du PDF
+
+```bash
+weasyprint CV.html CV_Nathalie_AVRIL.pdf
+```
+
+---
+
+## Profil
+
+- **Reconversion** : Data/DevOps Engineer après 20 ans d'embarqué industriel
+- **Alternance** : Neolithe (sept 2024 → sept 2026), formation Liora (ex-DataScientest)
+- **Certification visée** : RNCP 38919 "Data engineer" Niveau 7
 - **Poste visé** : Data / DevOps Engineer, avec différenciation industrie/IoT
 
 ---
 
-## Inventaire des projets valorisables
+## Projets valorisables
 
-### Neolithe - Intégration ERP/MES (mes_erp_flow_v2)
-**Rôle** : Data Engineer (alternance)
-- 4 pipelines ETL bidirectionnels (Prefect 3) : ERP Sylob ↔ MES Aveva Calcite
-- Connecteurs API REST (OAuth2) + ODBC (SQL Server), retry/backoff exponentiel
-- Sync incrémentale avec delta tracking, validation Pydantic
-- CI/CD GitLab, Docker, déploiement multi-env (dev/staging/prod)
-- 220+ tests pytest, logging structuré, alerting Teams
-- **Stack** : Python, Pandas, Prefect 3, SQL Server, Docker, GitLab CI/CD, Pydantic
+### Neolithe (alternance)
+- **Pipelines ETL** : 4 pipelines bidirectionnels (Prefect 3), ERP ↔ MES, 220+ tests
+- **Litho** : Application labo sur Frappe (36 DocTypes, architecture EAV), 210+ tests
+- **Infrastructure K8s** : Cluster on-premise, GitOps (ArgoCD), 16 applications en production
 
-### Neolithe - Litho (application de gestion de laboratoire)
-**Rôle** : Développeur Full-Stack / Data Engineer
-- Application sur Frappe v15 (Python 3.11, MariaDB, Redis)
-- 36 DocTypes, architecture EAV pour formulaires dynamiques
-- Intégration ERP Sylob (ODBC/pyodbc), parsers instruments labo (Mastersizer...)
-- API BI pour Superset/Power BI, SQL views génériques
-- 210+ tests, CI/CD GitLab (Ruff, pytest, Docker)
-- **Stack** : Python, Frappe, MariaDB, Redis, Docker, GitLab CI/CD
+### Liora (formation)
+- **Crypto-bot** : Plateforme trading (FastAPI, K8s Talos, ArgoCD, Sealed Secrets), 97,5% d'économie vs cloud
 
-### Neolithe - Infrastructure Kubernetes
-**Rôle** : DevOps / Platform Engineer
-- Cluster Kubernetes on-premise, déploiement GitOps (ArgoCD)
-- 16 applications gérées : Litho, Airbyte, Superset, ThingsBoard, Grafana/Loki, MinIO
-- Helm, Kustomize, opérateurs (CNPG PostgreSQL, MariaDB, MinIO)
-- Stockage distribué (Longhorn), backup (Kopia)
-- **Stack** : Kubernetes, ArgoCD, Helm, Kustomize, Grafana, Loki, PostgreSQL
-
-### Liora - Crypto-bot (projet formation)
-**Rôle** : Architecte / Développeur Full-Stack
-- Plateforme de trading crypto : FastAPI + Streamlit + PostgreSQL + MongoDB
-- Cluster Kubernetes (Talos Linux, 3 noeuds) sur Proxmox
-- GitOps (ArgoCD), Sealed Secrets, Cloudflare Tunnel
-- Architecture hybride on-premise + AWS (97.5% d'économie vs full cloud)
-- Monitoring centralisé (Grafana + Loki + Promtail)
-- CI/CD GitLab, multi-env (dev/staging/prod)
-- **Stack** : Python, FastAPI, Streamlit, PostgreSQL, MongoDB, Kubernetes, ArgoCD, Kustomize
-
-### Creative Eurecom - Embarqué (2007-2024)
-**Rôle** : Concepteur développeur logiciel embarqué/débarqué
-- Logiciels embarqués classe A/B (C), conformes ISO 13485 (médical)
-- Applications débarquées (C++, C#), bancs de test, analyse de données Python
-- Intranet eGroupware (PHP/MySQL) utilisé 15 ans, prise en main ERP Sylob
-- **Valorisation DE** : temps réel → pipelines faible latence, bancs de test → data validation, IoT → edge computing
-
-### Sojadis - Embarqué (2005-2007)
-- Logiciels embarqués C sous OS temps réel, bancs de test LabView
-- Site internet PHP/MySQL
+### Creative Eurecom (2007-2024)
+- Embarqué C classe A/B (ISO 13485), applications C++/C#, intranet eGroupware (15 ans), ERP Sylob
 
 ---
 
 ## Architecture GitLab / GitHub
 
-**Stratégie : GitLab = source de vérité, GitHub = vitrine (miroir automatique)**
-> Voir le diagramme : [architecture-gitlab-github.excalidraw](architecture-gitlab-github.excalidraw)
+**GitLab = source de vérité, GitHub = vitrine (miroir automatique)**
 
 ```
-GitLab (source, travail quotidien, CI/CD, gestion de projet)
+GitLab (source, CI/CD, gestion de projet)
 ├── datiara/public/cv-data-devops-engineer  ──miroir auto──▶  GitHub Datiara/cv-data-devops-engineer
-├── datiara/public/crypto-bot (futur)       ──miroir auto──▶  GitHub Datiara/crypto-bot
 └── (autres projets futurs)
-
-GitHub (vitrine, visibilité recruteurs)
-├── Datiara/cv-data-devops-engineer         ← miroir auto depuis GitLab
-└── (futurs miroirs)
 ```
 
 ---
 
-## Différenciation clé
+## Différenciation
 
 Profil rare : Data Engineer avec 20 ans d'embarqué industriel. Cibles :
 - **Industrie 4.0 / IoT** — ThingsBoard déjà déployé
 - **Entreprises manufacturières** en transformation digitale
 - **Éditeurs MES / ERP / SCADA** — intégration Sylob/Aveva déjà faite
-- **Edge computing** et traitement de données industrielles
-- **DataOps / Platform Engineering** — Kubernetes, ArgoCD, GitOps déjà en production
-
-Atout supplémentaire : le projet Crypto-bot montre une capacité à architecturer une infra complète from scratch (Proxmox → K8s → ArgoCD → monitoring), avec une approche coût maîtrisé.
+- **DataOps / Platform Engineering** — Kubernetes, ArgoCD, GitOps en production

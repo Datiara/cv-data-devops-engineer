@@ -222,3 +222,80 @@ body {
   color: #777;
   font-size: 7pt;
 }
+
+/* ============================================
+   RESPONSIVE — affichage navigateur
+   ============================================ */
+@media screen {
+  .page {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    overflow: visible;
+  }
+  body {
+    font-size: 11pt;
+    background: #f5f5f5;
+  }
+  .sidebar {
+    padding: 20px;
+  }
+  .main {
+    padding: 20px 25px;
+  }
+  .sidebar p, .sidebar li { font-size: 10pt; }
+  .sidebar h2 { font-size: 11pt; }
+  .sidebar .skill-category strong { font-size: 9.5pt; }
+  .sidebar .skill-tags { font-size: 8.5pt; line-height: 1.4; }
+  .sidebar .lang-item, .sidebar .interest-item { font-size: 9.5pt; }
+  .sidebar .contact-info { font-size: 10pt; }
+  .main h1 { font-size: 22pt; }
+  .main .tagline { font-size: 13pt; }
+  .main .update-date { font-size: 8pt; }
+  .main h2 { font-size: 12pt; padding: 4px 8px; }
+  .main h4 { font-size: 10pt; }
+  .main ul li { font-size: 10.5pt; }
+  .main .stack { font-size: 9.5pt; }
+  .profile-text { font-size: 10.5pt; }
+  .exp-header { padding: 5px 10px; }
+  .exp-header .exp-poste { font-size: 11pt; }
+  .exp-header .exp-entreprise { font-size: 10pt; }
+  .exp-header .exp-periode { font-size: 9pt; }
+  .formation-table { font-size: 10pt; }
+  .formation-table .periode { font-size: 9pt; }
+  .formation-table .etablissement { font-size: 9pt; }
+  .photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Mobile : sidebar au-dessus du main */
+@media screen and (max-width: 700px) {
+  .page {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .photo {
+    width: 80px;
+    height: 80px;
+  }
+  .main h1 { font-size: 18pt; }
+  .main .tagline { font-size: 11pt; }
+  .exp-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .exp-header .exp-periode {
+    white-space: normal;
+  }
+  .main .name-row {
+    flex-direction: column;
+  }
+}
