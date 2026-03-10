@@ -1,0 +1,14 @@
+# Données personnelles - NE PAS COMMITER
+donnees_perso.md
+CV.md
+*.local.md
+.local-*
+
+# Ancien CV avec données perso
+CV Nathalie_AVRIL_20240531.pdf
+
+# Métadonnées Windows/WSL
+*:Zone.Identifier
+
+# Archives
+*.zip
