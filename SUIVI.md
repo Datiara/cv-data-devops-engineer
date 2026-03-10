@@ -126,10 +126,10 @@ GitHub (vitrine, visibilité recruteurs)
 
 **Étapes :**
 - [x] Créer le repo GitLab `datiara/public/cv-data-devops-engineer`
-- [ ] Commiter et pousser le CV sur GitLab
-- [ ] Créer le repo GitHub `Datiara/cv-data-devops-engineer`
-- [ ] Configurer le miroir automatique GitLab → GitHub (Settings > Repository > Mirroring)
-- [ ] Créer le repo GitHub `Datiara/Datiara` (profile README)
+- [x] Commiter et pousser le CV sur GitLab
+- [x] Créer le repo GitHub `Datiara/cv-data-devops-engineer`
+- [x] Configurer le miroir automatique GitLab → GitHub (Settings > Repository > Mirroring)
+- [x] Créer le repo GitHub `Datiara/Datiara` (profile README)
 - [ ] Rédiger le profile README GitHub (présentation, compétences, liens vers GitLab)
 
 ---
