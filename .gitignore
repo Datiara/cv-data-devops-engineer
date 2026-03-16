@@ -6,8 +6,8 @@ CV.md
 
 # CV avec données perso (HTML/PDF)
 CV.html
-CV_Nathalie_AVRIL.pdf
-CV Nathalie_AVRIL_20240531.pdf
+CV_Nathalie_AVRIL*.pdf
+!CV_Nathalie_AVRIL*_public*.pdf
 
 
 # Métadonnées Windows/WSL

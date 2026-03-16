@@ -120,8 +120,8 @@ body {
   align-items: baseline;
 }
 .main .tagline {
-  font-size: 10pt;
-  color: #5bbcb4;
+  font-size: 13pt;
+  color: #1a7a72;
   font-weight: 700;
   margin-bottom: 1.5mm;
   text-align: center;
@@ -145,7 +145,7 @@ body {
   margin-bottom: 0.7mm;
 }
 .main h4 {
-  font-size: 8.5pt;
+  font-size: 9pt;
   color: #3a9e96;
   margin: 1mm 0 0.3mm 0;
 }
@@ -156,14 +156,16 @@ body {
 .main ul li {
   margin-bottom: 0.3mm;
   font-size: 9pt;
-  line-height: 1.45;
+  line-height: 1.35;
 }
 .main .stack {
-  font-size: 7pt;
-  color: #3a9e96;
-  font-weight: 600;
-  margin-top: 0.2mm;
-  margin-bottom: 1mm;
+  font-size: 8pt;
+  color: #96440e;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .profile-text {
   font-size: 8.5pt;
@@ -178,9 +180,9 @@ body {
   justify-content: space-between;
   align-items: baseline;
   background: #f0fafa;
-  padding: 1mm 2mm;
+  padding: 0.8mm 1.8mm;
   border-radius: 1mm;
-  margin: 1.5mm 0 0.5mm 0;
+  margin: 1.3mm 0 0.5mm 0;
   border-left: 2.5px solid #5bbcb4;
 }
 .exp-header .exp-poste {

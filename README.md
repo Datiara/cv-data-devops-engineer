@@ -9,7 +9,8 @@
 
 ```
 ├── index.html          CV public (sans données perso) — hébergé via GitLab/GitHub Pages
-├── style.css           Feuille de style partagée (responsive web + PDF A4)
+├── style.css           Feuille de style PDF (compact, A4 1 page)
+├── style-web.css       Feuille de style web (responsive mobile/desktop)
 ├── images/             Photo, drapeaux, icônes
 ├── CV_public.md        CV public en Markdown (lisible sur GitLab/GitHub)
 ├── .gitlab-ci.yml      Déploiement GitLab Pages
@@ -25,10 +26,17 @@
 - **GitLab Pages** : https://datiara.gitlab.io/public/cv-data-devops-engineer
 - **GitHub Pages** : https://datiara.github.io/cv-data-devops-engineer
 
-### Génération du PDF
+### Génération des PDF
 
 ```bash
+# PDF privé (avec données perso) — depuis CV.html + style.css
 weasyprint CV.html CV_Nathalie_AVRIL.pdf
+
+# PDF public (sans données perso) — depuis index.html + style.css
+# index.html utilise style-web.css par défaut, il faut remplacer par style.css pour le PDF
+sed 's|style-web.css|style.css|' index.html > .CV_public_tmp.html
+weasyprint .CV_public_tmp.html CV_Nathalie_AVRIL_public.pdf
+rm .CV_public_tmp.html
 ```
 
 ---
@@ -52,6 +60,9 @@ weasyprint CV.html CV_Nathalie_AVRIL.pdf
 ### Liora (formation)
 - **Crypto-bot** : Plateforme trading (FastAPI, K8s Talos, ArgoCD, Sealed Secrets), 97,5% d'économie vs cloud
 
+### Portfolio personnel
+- **Industrial Data Sync** : Pipeline ETL bidirectionnel ERP ↔ MES (Prefect 3, AWS serverless : S3, DynamoDB, Lambda), version anonymisée et simplifiée d'un projet industriel réel
+
 ### Creative Eurecom (2007-2024)
 - Embarqué C classe A/B (ISO 13485), applications C++/C#, intranet eGroupware (15 ans), ERP Sylob
 
@@ -63,8 +74,8 @@ weasyprint CV.html CV_Nathalie_AVRIL.pdf
 
 ```
 GitLab (source, CI/CD, gestion de projet)
-├── datiara/public/cv-data-devops-engineer  ──miroir auto──▶  GitHub Datiara/cv-data-devops-engineer
-└── (autres projets futurs)
+├── datiara/public/cv-data-devops-engineer    ──miroir──▶  GitHub Datiara/cv-data-devops-engineer
+└── datiara/public/industrial-data-sync       ──miroir──▶  GitHub Datiara/industrial-data-sync
 ```
 
 ---
