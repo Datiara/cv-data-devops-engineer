@@ -8,11 +8,13 @@
 ## Structure du projet
 
 ```
-├── index.html          CV public (sans données perso) — hébergé via GitLab/GitHub Pages
+├── index.html          CV public FR (sans données perso) — hébergé via GitLab/GitHub Pages
+├── en.html             CV public EN (sans données perso) — hébergé via GitLab/GitHub Pages
 ├── style.css           Feuille de style PDF (compact, A4 1 page)
-├── style-web.css       Feuille de style web (responsive mobile/desktop)
+├── style-web.css       Feuille de style web (responsive mobile/desktop, + sélecteur FR/EN)
 ├── images/             Photo, drapeaux, icônes
-├── CV_public.md        CV public en Markdown (lisible sur GitLab/GitHub)
+├── CV_public.md        CV public FR en Markdown (lisible sur GitLab/GitHub)
+├── CV_public_en.md     CV public EN en Markdown (lisible sur GitLab/GitHub)
 ├── .gitlab-ci.yml      Déploiement GitLab Pages
 │
 ├── CV.html             CV privé avec données perso (non tracké)

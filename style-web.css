@@ -1,4 +1,19 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
+.update-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.lang-switch {
+  font-size: 9pt;
+}
+.lang-switch a {
+  color: #3a9e96;
+  text-decoration: none;
+}
+.lang-switch a:hover {
+  text-decoration: underline;
+}
 body {
   font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   font-size: 11pt;
