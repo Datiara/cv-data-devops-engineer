@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>CV Nathalie AVRIL — Data / DevOps Engineer</title>
-<link rel="stylesheet" href="style-web.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="page">
@@ -18,16 +18,12 @@
     <h2>💡 Compétences</h2>
 
     <div class="skill-category">
-      <strong>Cloud &amp; Infra</strong>
-      <div class="skill-tags">Kubernetes, Docker, ArgoCD, Helm, Kustomize, Proxmox, Talos Linux</div>
+      <strong>Cloud &amp; Infra / GitOps</strong>
+      <div class="skill-tags">Kubernetes, Docker, ArgoCD, Helm, Kustomize, GitLab CI/CD, Sealed Secrets, Proxmox, Talos Linux</div>
     </div>
     <div class="skill-category">
       <strong>Data Engineering</strong>
       <div class="skill-tags">Python, Pandas, Prefect 3, SQL, ETL/ELT, Airbyte</div>
-    </div>
-    <div class="skill-category">
-      <strong>CI/CD &amp; GitOps</strong>
-      <div class="skill-tags">GitLab CI/CD, ArgoCD, Sealed Secrets, pre-commit</div>
     </div>
     <div class="skill-category">
       <strong>Observabilité</strong>
@@ -56,10 +52,6 @@
     <div class="skill-category">
       <strong>Systèmes</strong>
       <div class="skill-tags">Linux, Windows</div>
-    </div>
-    <div class="skill-category">
-      <strong>Gestion de projet</strong>
-      <div class="skill-tags">GitLab (issues, boards, milestones), Agile, cycle en V</div>
     </div>
 
     <h2>📜 Certificats Liora (33)</h2>
@@ -104,25 +96,22 @@
     <h2>🎵 Centres d'intérêt</h2>
     <p class="interest-item"><img src="images/sousaphone_icon.png" class="icon-inline" alt="soubassophone"> Soubassophone, 🎷 Saxophone</p>
     <p class="interest-item">🎓 DFE Saxophone et solfège</p>
-<p class="interest-item">🏃 Course, Boxe thaï, Taïso, Trek</p>
+    <p class="interest-item">🏃 Course, Boxe thaï, Taïso, Trek</p>
   </div>
 
   <!-- MAIN -->
   <div class="main">
     <div class="name-row">
       <h1>Nathalie AVRIL</h1>
-      <span class="update-info">
-        <span class="lang-switch"><a href="index.html"><strong>FR</strong></a> | <a href="en.html">EN</a></span>
-        <span class="update-date">Mis à jour le 15/04/2026</span>
-      </span>
+      <span class="update-date">Mis à jour le 15/04/2026</span>
     </div>
     <div class="tagline">Data / DevOps Engineer</div>
 
     <h2>📝 Profil</h2>
     <p class="profile-text">
-      Data / DevOps Engineer combinant <strong>19 ans d'expertise en développement logiciel embarqué industriel</strong> et une spécialisation en <strong>data engineering &amp; platform engineering</strong>.
-      Je conçois et mets en production des systèmes data fiables et scalables (ETL, Kubernetes, GitOps), avec un focus sur l'<strong>automatisation, l'observabilité et la robustesse</strong>.
-      Profil hybride : rigueur industrielle, culture qualité et sécurité, vision système.
+      Data / DevOps Engineer combinant <strong>19 ans d'expertise en développement embarqué industriel</strong> et une spécialisation en <strong>data engineering &amp; platform engineering</strong>.
+      Mise en production de systèmes data fiables et scalables (ETL, Kubernetes, GitOps) — focus <strong>automatisation, observabilité, sécurité</strong>.
+      Profil hybride : rigueur industrielle, culture qualité, vision système.
     </p>
 
     <h2>💼 Expériences professionnelles</h2>
@@ -134,8 +123,7 @@
 
     <h4>📊 Pipelines ETL — Intégration ERP/MES</h4>
     <ul>
-      <li><strong>Mise en production de 4 pipelines ETL bidirectionnels</strong> (Prefect 3) synchronisant ERP et MES en environnement industriel</li>
-      <li>Fiabilisation : retry, backoff exponentiel, validation <strong>Pydantic</strong>, synchronisation incrémentale (<strong>delta tracking</strong>)</li>
+      <li><strong>Mise en production de 4 pipelines ETL bidirectionnels</strong> (Prefect 3) synchronisant ERP et MES en environnement industriel ; retry/backoff, validation <strong>Pydantic</strong>, <strong>delta tracking</strong></li>
       <li>Connecteurs <strong>API REST (OAuth2)</strong> et <strong>ODBC (SQL Server)</strong>, logging structuré, alerting</li>
       <li><strong>220+ tests pytest (69% coverage)</strong>, documentation Mermaid, CI/CD GitLab</li>
     </ul>
@@ -151,20 +139,17 @@
 
     <h4>🔬 Litho — Application de gestion de laboratoire</h4>
     <ul>
-      <li>Application sur <strong>Frappe Framework</strong> (36 modèles de données), architecture <strong>EAV</strong></li>
-      <li>Intégration ERP via ODBC, parsers instruments labo, API BI (Superset, Power BI)</li>
-      <li>📧 Intégration <strong>Microsoft Graph API</strong> : override EmailAccount Frappe via <strong>OAuth2 client_credentials</strong> (Azure AD), contournement SMTP AUTH désactivé ; 25 tests unitaires, hook <code>after_migrate</code> idempotent, secrets via SealedSecret</li>
+      <li>Application sur <strong>Frappe Framework</strong> (36 modèles, architecture <strong>EAV</strong>) ; intégration ERP (ODBC), parsers instruments labo, API BI (Superset, Power BI)</li>
+      <li>📧 <strong>Microsoft Graph API</strong> : override EmailAccount Frappe via <strong>OAuth2 client_credentials</strong> (Azure AD), contournant SMTP AUTH désactivé ; secrets via SealedSecret</li>
       <li><strong>210+ tests</strong>, CI/CD GitLab (Ruff → build → test → release)</li>
     </ul>
     <div class="stack">Stack : Python, Frappe v15, MariaDB, Redis, Docker, GitLab CI/CD, Microsoft Graph API</div>
 
     <h4>☸️ Infrastructure Kubernetes — Platform Engineering</h4>
     <ul>
-      <li><strong>Conception et déploiement d'une plateforme Kubernetes on-premise</strong> en approche <strong>GitOps (ArgoCD)</strong></li>
+      <li><strong>Conception et déploiement d'une plateforme Kubernetes on-premise</strong> en approche <strong>GitOps (ArgoCD)</strong>, Helm/Kustomize</li>
       <li><strong>16 applications en production</strong> : data (Airbyte, Superset), IoT (ThingsBoard), BI, stockage (MinIO), observabilité (Grafana/Loki)</li>
-      <li><strong>Observabilité centralisée</strong> (Grafana + Loki), stockage distribué (Longhorn), backup (Kopia)</li>
-      <li><strong>SealedSecrets Bitnami</strong> : cycle de vie des secrets chiffrés (rotation de nonce, scoping par namespace), <strong>6 secrets × 2 environnements</strong></li>
-      <li>Standardisation des déploiements (Helm/Kustomize) → résilience et observabilité du SI</li>
+      <li>Stockage distribué (Longhorn), backup (Kopia), <strong>SealedSecrets</strong> avec rotation de nonce et scoping par namespace (<strong>6 secrets × 2 envs</strong>)</li>
     </ul>
     <div class="stack">Stack : Kubernetes, ArgoCD, Helm, Kustomize, Grafana, Loki, Sealed Secrets, PostgreSQL</div>
 
@@ -173,11 +158,9 @@
       <span class="exp-periode">Alternance · 2024 – 2026</span>
     </div>
     <ul>
-      <li>Plateforme de trading automatisé : <strong>FastAPI + Streamlit + PostgreSQL + MongoDB</strong></li>
-      <li>Cluster <strong>Kubernetes (Talos Linux, 3 nœuds)</strong> sur Proxmox, <strong>Cloudflare Tunnel</strong></li>
-      <li>GitOps (ArgoCD), <strong>Sealed Secrets</strong>, multi-env (dev/staging/prod)</li>
-      <li>Architecture hybride on-premise + cloud (<strong>97,5% d'économie</strong>)</li>
-      <li>Monitoring (Grafana + Loki + Promtail), CI/CD GitLab, gestion de projet GitLab</li>
+      <li>Plateforme de trading automatisé (<strong>FastAPI + Streamlit + PostgreSQL + MongoDB</strong>) sur cluster <strong>Kubernetes Talos Linux (3 nœuds)</strong> / Proxmox, accès <strong>Cloudflare Tunnel</strong></li>
+      <li>GitOps (ArgoCD), <strong>Sealed Secrets</strong>, multi-env (dev/staging/prod), monitoring Grafana/Loki/Promtail, CI/CD GitLab</li>
+      <li>Architecture hybride on-premise + cloud — <strong>97,5 % d'économie d'infra</strong></li>
     </ul>
     <div class="stack">Stack : Python, FastAPI, Streamlit, PostgreSQL, MongoDB, MinIO, K8s, ArgoCD, Kustomize</div>
 
@@ -186,10 +169,8 @@
       <span class="exp-periode">Saint Bart. d'Anjou (49) · 2007 – 2024</span>
     </div>
     <ul>
-      <li>Logiciels embarqués classe A/B en <strong>C</strong>, conformes <strong>ISO 13485</strong> (médical), temps réel</li>
-      <li>Applications débarquées (<strong>C++, C#</strong>) : bancs de test, interfaces de pilotage, analyse Python</li>
-      <li>Intranet <strong>eGroupware</strong> (PHP, MySQL) : devis, commandes, fournisseurs — <strong>utilisé 15 ans</strong></li>
-      <li>Prise en main de l'<strong>ERP Sylob</strong> (même ERP intégré via ETL chez Neolithe)</li>
+      <li>Logiciels embarqués classe A/B en <strong>C</strong>, conformes <strong>ISO 13485</strong> (médical), temps réel ; applications débarquées (<strong>C++, C#</strong>) : bancs de test, pilotage, analyse Python</li>
+      <li>Intranet <strong>eGroupware</strong> (PHP, MySQL) : devis, commandes, fournisseurs — <strong>utilisé 15 ans</strong> ; prise en main <strong>ERP Sylob</strong> (même ERP intégré via ETL chez Neolithe)</li>
     </ul>
 
     <div class="exp-header">

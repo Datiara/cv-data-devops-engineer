@@ -18,40 +18,48 @@
     <h2>💡 Skills</h2>
 
     <div class="skill-category">
+      <strong>Cloud &amp; Infra</strong>
+      <div class="skill-tags">Kubernetes, Docker, ArgoCD, Helm, Kustomize, Proxmox, Talos Linux</div>
+    </div>
+    <div class="skill-category">
       <strong>Data Engineering</strong>
-      <div class="skill-tags">Python, Pandas, Prefect 3, SQL, ETL/ELT</div>
+      <div class="skill-tags">Python, Pandas, Prefect 3, SQL, ETL/ELT, Airbyte</div>
     </div>
     <div class="skill-category">
-      <strong>DevOps / Infra</strong>
-      <div class="skill-tags">Kubernetes, ArgoCD, Helm, Docker, CI/CD GitLab, Sealed Secrets, Grafana, Loki</div>
+      <strong>CI/CD &amp; GitOps</strong>
+      <div class="skill-tags">GitLab CI/CD, ArgoCD, Sealed Secrets, pre-commit</div>
     </div>
     <div class="skill-category">
-      <strong>Development</strong>
-      <div class="skill-tags">Python, FastAPI, Frappe, Streamlit, C, C++, C#</div>
+      <strong>Observability</strong>
+      <div class="skill-tags">Grafana, Loki, Promtail, alerting</div>
+    </div>
+    <div class="skill-category">
+      <strong>Quality / Security</strong>
+      <div class="skill-tags">SAST (Semgrep, Bandit, Ruff), OAuth2, Azure AD, secret scanning</div>
     </div>
     <div class="skill-category">
       <strong>Databases</strong>
       <div class="skill-tags">SQL Server, PostgreSQL, MariaDB, MongoDB, Redis, MinIO</div>
     </div>
     <div class="skill-category">
-      <strong>Data Viz / BI</strong>
-      <div class="skill-tags">Matplotlib, Dash, Power BI, Looker Studio, Superset, Airbyte</div>
+      <strong>Development</strong>
+      <div class="skill-tags">Python, FastAPI, Frappe, Streamlit, C, C++, C#</div>
     </div>
     <div class="skill-category">
-      <strong>Automation</strong>
+      <strong>Data Viz / BI</strong>
+      <div class="skill-tags">Matplotlib, Dash, Power BI, Looker Studio, Superset</div>
+    </div>
+    <div class="skill-category">
+      <strong>Low-code Automation</strong>
       <div class="skill-tags">Power Automate, PowerApps, SharePoint, Microsoft 365</div>
     </div>
     <div class="skill-category">
       <strong>Systems</strong>
-      <div class="skill-tags">Linux, Windows, Proxmox, Talos Linux</div>
+      <div class="skill-tags">Linux, Windows</div>
     </div>
     <div class="skill-category">
       <strong>Project Management</strong>
       <div class="skill-tags">GitLab (issues, boards, milestones), Agile, V-model</div>
-    </div>
-    <div class="skill-category">
-      <strong>AI &amp; Productivity</strong>
-      <div class="skill-tags">Claude Code, Perplexity</div>
     </div>
 
     <h2>📜 Liora Certificates (33)</h2>
@@ -91,7 +99,7 @@
 
     <h2><img src="images/langues.png" class="icon-inline"> Languages</h2>
     <p class="lang-item"><img src="images/gb.png" class="flag-icon"> English: B1</p>
-    <p class="lang-item"><img src="images/de.png" class="flag-icon"> German: B1</p>
+    <p class="lang-item"><img src="images/de.png" class="flag-icon"> German: A1</p>
 
     <h2>🎵 Interests</h2>
     <p class="interest-item"><img src="images/sousaphone_icon.png" class="icon-inline" alt="sousaphone"> Sousaphone, 🎷 Saxophone</p>
@@ -105,15 +113,16 @@
       <h1>Nathalie AVRIL</h1>
       <span class="update-info">
         <span class="lang-switch"><a href="index.html">FR</a> | <a href="en.html"><strong>EN</strong></a></span>
-        <span class="update-date">Updated 18/03/2026</span>
+        <span class="update-date">Updated 15/04/2026</span>
       </span>
     </div>
     <div class="tagline">Data / DevOps Engineer</div>
 
     <h2>📝 Profile</h2>
     <p class="profile-text">
-      Data/DevOps Engineer transitioning after <strong>19 years</strong> of <strong>embedded software</strong> development in industrial environments.
-      Hybrid profile combining industrial rigour, data expertise and DevOps culture.
+      Data / DevOps Engineer combining <strong>19 years of expertise in industrial embedded software development</strong> with a specialisation in <strong>data engineering &amp; platform engineering</strong>.
+      I design and deploy reliable, scalable data systems (ETL, Kubernetes, GitOps), with a focus on <strong>automation, observability and robustness</strong>.
+      Hybrid profile: industrial rigour, quality &amp; security culture, systems thinking.
     </p>
 
     <h2>💼 Professional Experience</h2>
@@ -125,36 +134,39 @@
 
     <h4>📊 ETL Pipelines — ERP/MES Integration</h4>
     <ul>
-      <li>Designed <strong>4 bidirectional ETL pipelines</strong> (Prefect 3) synchronising an ERP and an MES in industrial production</li>
-      <li><strong>REST API (OAuth2)</strong> and <strong>ODBC (SQL Server)</strong> connectors with retry, exponential backoff</li>
-      <li>Incremental synchronisation with <strong>delta tracking</strong>, <strong>Pydantic</strong> validation</li>
-      <li>220+ pytest tests (69% coverage), Mermaid documentation, Teams alerting</li>
+      <li><strong>Production deployment of 4 bidirectional ETL pipelines</strong> (Prefect 3) synchronising ERP and MES in an industrial environment</li>
+      <li>Reliability engineering: retry, exponential backoff, <strong>Pydantic</strong> validation, incremental sync (<strong>delta tracking</strong>)</li>
+      <li><strong>REST API (OAuth2)</strong> and <strong>ODBC (SQL Server)</strong> connectors, structured logging, alerting</li>
+      <li><strong>220+ pytest tests (69% coverage)</strong>, Mermaid documentation, GitLab CI/CD</li>
     </ul>
     <div class="stack">Stack: Python, Pandas, Prefect 3, SQL Server, Docker, Pydantic, GitLab CI/CD</div>
 
     <h4>⚡ Power Platform — Supplier Invoice Integration</h4>
     <ul>
-      <li>End-to-end solution: <strong>9 Power Automate flows</strong> + <strong>1 Canvas App</strong> (PowerApps) for dispute management</li>
-      <li>Automated pipeline: email → PDF → SharePoint → SFTP → <strong>ERP Sylob</strong>, Teams notifications, logging</li>
-      <li><strong>DEV/PROD environments</strong>, 21 environment variables, <strong>Power Platform CLI (pac)</strong> deployment pipeline</li>
+      <li><strong>Automated supplier invoice integration solution</strong>: <strong>9 Power Automate flows</strong> + <strong>1 Canvas App</strong> (PowerApps) for dispute management</li>
+      <li>End-to-end pipeline: email → PDF → SharePoint → SFTP → <strong>ERP Sylob</strong>, Teams notifications, logging</li>
+      <li>Full industrialisation: <strong>DEV/PROD environments</strong>, 21 environment variables, <strong>Power Platform CLI (pac)</strong> pipeline, GitLab CI/CD</li>
     </ul>
-    <div class="stack">Stack: Power Automate, PowerApps, SharePoint, Outlook, Teams, SFTP, Power Platform CLI, GitLab CI/CD</div>
+    <div class="stack">Stack: Power Automate/Apps/Platform CLI, SharePoint, Outlook, Teams, SFTP, GitLab CI/CD</div>
 
     <h4>🔬 Litho — Laboratory Management Application</h4>
     <ul>
       <li><strong>Frappe Framework</strong> application (36 data models), <strong>EAV</strong> architecture</li>
       <li>ERP integration via ODBC, lab instrument parsers, BI API (Superset, Power BI)</li>
-      <li>210+ tests, GitLab CI/CD (Ruff → build → test → release)</li>
+      <li>📧 <strong>Microsoft Graph API</strong> integration: override of Frappe's EmailAccount via <strong>OAuth2 client_credentials</strong> (Azure AD), bypassing tenant SMTP AUTH deactivation; 25 unit tests, idempotent <code>after_migrate</code> hook, secrets via SealedSecret</li>
+      <li><strong>210+ tests</strong>, GitLab CI/CD (Ruff → build → test → release)</li>
     </ul>
-    <div class="stack">Stack: Python, Frappe v15, MariaDB, Redis, Docker, GitLab CI/CD</div>
+    <div class="stack">Stack: Python, Frappe v15, MariaDB, Redis, Docker, GitLab CI/CD, Microsoft Graph API</div>
 
     <h4>☸️ Kubernetes Infrastructure — Platform Engineering</h4>
     <ul>
-      <li><strong>On-premise Kubernetes</strong> cluster, <strong>GitOps (ArgoCD)</strong> deployment</li>
-      <li><strong>16 applications</strong> in production: Litho, Airbyte, Superset, ThingsBoard, Grafana/Loki, MinIO</li>
-      <li>Centralised monitoring (Grafana + Loki), distributed storage (Longhorn), backup (Kopia)</li>
+      <li><strong>Design and rollout of an on-premise Kubernetes platform</strong> using a <strong>GitOps (ArgoCD)</strong> approach</li>
+      <li><strong>16 applications in production</strong>: data (Airbyte, Superset), IoT (ThingsBoard), BI, storage (MinIO), observability (Grafana/Loki)</li>
+      <li><strong>Centralised observability</strong> (Grafana + Loki), distributed storage (Longhorn), backup (Kopia)</li>
+      <li><strong>Bitnami SealedSecrets</strong>: encrypted secret lifecycle (nonce rotation, namespace scoping), <strong>6 secrets × 2 environments</strong></li>
+      <li>Deployment standardisation (Helm/Kustomize) → resilience and observability of the IS</li>
     </ul>
-    <div class="stack">Stack: Kubernetes, ArgoCD, Helm, Kustomize, Grafana, Loki, PostgreSQL</div>
+    <div class="stack">Stack: Kubernetes, ArgoCD, Helm, Kustomize, Grafana, Loki, Sealed Secrets, PostgreSQL</div>
 
     <div class="exp-header">
       <span><span class="exp-poste">Data Engineer</span> — <span class="exp-entreprise">Liora</span> · Crypto-bot Project</span>
@@ -178,7 +190,6 @@
       <li>Desktop applications (<strong>C++, C#</strong>): production test benches, control interfaces, Python analysis</li>
       <li><strong>eGroupware</strong> intranet (PHP, MySQL): quotes, orders, suppliers — <strong>used 15 years</strong></li>
       <li>Onboarding of <strong>ERP Sylob</strong> (same ERP integrated via ETL at Neolithe)</li>
-      <li>Staff training, code reviews, cross-department coordination</li>
     </ul>
 
     <div class="exp-header">

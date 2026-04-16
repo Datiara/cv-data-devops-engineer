@@ -9,7 +9,7 @@
 
 ## 📝 Profil
 
-Data/DevOps Engineer en reconversion après 19 ans de développement logiciel embarqué industriel. Expérience concrète en conception de pipelines ETL, intégration de systèmes industriels (ERP/MES), déploiement Kubernetes et GitOps en environnement de production. Profil hybride alliant rigueur industrielle, maîtrise de la donnée et culture DevOps.
+Data / DevOps Engineer combinant **19 ans d'expertise en développement logiciel embarqué industriel** et une spécialisation en **data engineering & platform engineering**. Je conçois et mets en production des systèmes data fiables et scalables (ETL, Kubernetes, GitOps), avec un focus sur l'**automatisation, l'observabilité et la robustesse**. Profil hybride : rigueur industrielle, culture qualité et sécurité, vision système.
 
 ---
 
@@ -17,16 +17,17 @@ Data/DevOps Engineer en reconversion après 19 ans de développement logiciel em
 
 | Domaine | Technologies |
 |---------|-------------|
-| **Data Engineering** | Python, Pandas, Prefect 3, SQL (SQL Server, PostgreSQL, MariaDB), ETL/ELT |
-| **DevOps / Infra** | Kubernetes, ArgoCD (GitOps), Helm, Docker, CI/CD GitLab, Sealed Secrets |
-| **Développement** | Python, FastAPI, Frappe Framework, Streamlit, C, C++, C# |
+| **Cloud & Infra** | Kubernetes, Docker, ArgoCD, Helm, Kustomize, Proxmox, Talos Linux |
+| **Data Engineering** | Python, Pandas, Prefect 3, SQL (SQL Server, PostgreSQL, MariaDB), ETL/ELT, Airbyte |
+| **CI/CD & GitOps** | GitLab CI/CD, ArgoCD, Sealed Secrets, pre-commit hooks |
+| **Observabilité** | Grafana, Loki, Promtail, logging structuré, alerting |
+| **Qualité / Sécurité** | SAST (Semgrep, Bandit, Ruff security), OAuth2 (client_credentials & delegated), Azure AD / App Registrations, secret scanning |
 | **Bases de données** | SQL Server, PostgreSQL, MariaDB, MongoDB, Redis, MinIO (S3) |
-| **Data Viz / BI** | Matplotlib, Dash, Power BI, Looker Studio, Apache Superset, Airbyte |
-| **Observabilité** | Grafana, logging structuré, alerting Teams |
-| **Systèmes** | Linux, Windows, Proxmox, Talos Linux |
-| **Automatisation** | Power Automate, PowerApps, SharePoint, Microsoft 365 |
+| **Développement** | Python, FastAPI, Frappe Framework, Streamlit, C, C++, C# |
+| **Data Viz / BI** | Matplotlib, Dash, Power BI, Looker Studio, Apache Superset |
+| **Automatisation low-code** | Power Automate, PowerApps, SharePoint, Microsoft 365 |
+| **Systèmes** | Linux, Windows |
 | **Gestion de projet** | GitLab (issues, boards, milestones), méthode Agile, cycle en V |
-| **IA & Productivité** | Claude Code, Perplexity — pair-programming, revue de code, architecture |
 
 ---
 
@@ -35,34 +36,33 @@ Data/DevOps Engineer en reconversion après 19 ans de développement logiciel em
 ### **Data / DevOps Engineer** — Neolithe | *Alternance · 2024 – 2026*
 
 #### 📊 Pipelines ETL — Intégration ERP/MES
-- Conception et développement de **4 pipelines ETL bidirectionnels** (Prefect 3) synchronisant un ERP et un MES en environnement de production industrielle
-- Architecture de connecteurs **API REST (OAuth2)** et **ODBC (SQL Server)** avec retry, backoff exponentiel et gestion transactionnelle
-- Implémentation d'une synchronisation incrémentale avec **delta tracking** pour optimiser les volumes de données transférés
-- Validation des données avec **Pydantic**, logging structuré, alerting Microsoft Teams
-- 220+ tests pytest (ratio couverture 69%), documentation technique avec diagrammes Mermaid
+- **Mise en production de 4 pipelines ETL bidirectionnels** (Prefect 3) synchronisant ERP et MES en environnement industriel
+- Fiabilisation des échanges : retry, backoff exponentiel, validation **Pydantic**, synchronisation incrémentale avec **delta tracking**
+- Connecteurs **API REST (OAuth2)** et **ODBC (SQL Server)**, logging structuré, alerting
+- **220+ tests pytest (69% de couverture)**, documentation Mermaid, CI/CD GitLab
 - **Stack** : Python, Pandas, Prefect 3, SQL Server, Docker, Pydantic, GitLab CI/CD
 
 #### ⚡ Power Platform — Intégration des factures fournisseurs
-- Conception d'une **solution Power Platform** complète : **9 flux Power Automate** + **1 Canvas App** (PowerApps) pour la gestion des litiges
-- Chaîne automatisée : réception email → extraction PDF → SharePoint → SFTP → intégration ERP Sylob, avec notifications Teams et logging
-- Gestion d'**environnements DEV/PROD** avec **21 variables d'environnement**, pipeline de déploiement via **Power Platform CLI (pac)**
-- CI/CD GitLab pour l'export, la vérification et le déploiement de la solution
-- **Stack** : Power Automate, PowerApps, SharePoint, Outlook, Teams, SFTP, Power Platform CLI, GitLab CI/CD
+- **Solution d'intégration automatisée des factures fournisseurs** : **9 flux Power Automate** + **1 Canvas App** (PowerApps) pour la gestion des litiges
+- Chaîne de bout en bout : email → extraction PDF → SharePoint → SFTP → **ERP Sylob**, notifications Teams, logging
+- Industrialisation complète : environnements **DEV/PROD**, **21 variables**, pipeline **Power Platform CLI (pac)**, CI/CD GitLab pour export / vérification / déploiement
+- **Stack** : Power Automate/Apps/Platform CLI, SharePoint, Outlook, Teams, SFTP, GitLab CI/CD
 
 #### 🔬 Litho — Application de gestion de laboratoire
-- Développement d'une application de gestion de laboratoire sur **Frappe Framework** (36 modèles de données)
-- Conception d'une architecture **EAV** (Entity-Attribute-Value) pour formulaires d'analyse dynamiques
-- Intégration ERP via ODBC, parsers d'instruments de laboratoire (Mastersizer, etc.)
-- API BI pour Superset et Power BI, SQL views génériques pour le reporting
-- 210+ tests, CI/CD GitLab (lint Ruff → build → test → release)
-- **Stack** : Python, Frappe v15, MariaDB, Redis, Docker, GitLab CI/CD
+- Application de gestion de laboratoire sur **Frappe Framework** (36 modèles de données), architecture **EAV** pour formulaires d'analyse dynamiques
+- Intégration ERP via ODBC, parsers d'instruments de laboratoire (Mastersizer, etc.), API BI (Superset, Power BI)
+- 📧 Intégration **Microsoft Graph API** : override du module EmailAccount Frappe via **OAuth2 client_credentials** (Azure AD) ; contournement de la désactivation SMTP AUTH tenant sans SDK Microsoft. 25 tests unitaires (mocks `requests`), hook `after_migrate` idempotent, secrets chiffrés via SealedSecret
+- **210+ tests**, CI/CD GitLab (lint Ruff → build → test → release)
+- **Stack** : Python, Frappe v15, MariaDB, Redis, Docker, GitLab CI/CD, Microsoft Graph API
 
 #### ☸️ Infrastructure Kubernetes — Platform Engineering
-- Déploiement et administration d'un cluster **Kubernetes on-premise** avec approche **GitOps (ArgoCD)**
-- Gestion de **16 applications** en production : Litho, Airbyte, Superset, ThingsBoard, Grafana/Loki, MinIO
+- **Conception et déploiement d'une plateforme Kubernetes on-premise** en approche **GitOps (ArgoCD)**
+- **16 applications en production** : data (Airbyte, Superset), IoT (ThingsBoard), BI, stockage (MinIO), observabilité (Grafana/Loki)
 - Configuration d'opérateurs Kubernetes (CNPG PostgreSQL, MariaDB, MinIO), stockage distribué (Longhorn)
-- Mise en place du monitoring centralisé (Grafana + Loki) et des stratégies de backup (Kopia)
-- **Stack** : Kubernetes, ArgoCD, Helm, Kustomize, Grafana, Loki, PostgreSQL
+- **Observabilité centralisée** (Grafana + Loki) et stratégie de backup (Kopia)
+- **SealedSecrets Bitnami** : cycle de vie des secrets chiffrés (génération scriptée, rotation de nonce, scoping par namespace), **6 secrets × 2 environnements** (staging/prod)
+- Standardisation des déploiements (Helm/Kustomize) → résilience et observabilité du SI
+- **Stack** : Kubernetes, ArgoCD, Helm, Kustomize, Grafana, Loki, Sealed Secrets, PostgreSQL
 
 ---
 
@@ -86,7 +86,6 @@ Data/DevOps Engineer en reconversion après 19 ans de développement logiciel em
 - Élaboration de plans de tests, exécution en simulation et sur cible, rédaction de rapports
 - Développement de l'intranet d'entreprise sous **eGroupware** (PHP, MySQL, Ajax) : gestion de devis, commandes, fournisseurs, saisie des temps, fiches de non-conformité — **utilisé 15 ans** en production
 - Prise en main de l'**ERP Sylob** (même ERP intégré aujourd'hui via ETL chez Neolithe)
-- Formation et support du personnel, revues de code croisées, coordination interdépartementale (Hardware, CAO, Mécanique)
 - **Valorisation Data/DevOps** : rigueur temps réel (pipelines faible latence), bancs de test automatisés (data validation), analyse de données de production, norme ISO 13485 (qualité des données)
 
 ---
@@ -144,7 +143,7 @@ Data/DevOps Engineer en reconversion après 19 ans de développement logiciel em
 ## 🌍 Langues
 
 - 🇬🇧 **Anglais** : B1 (documentation technique, README, commits)
-- 🇩🇪 **Allemand** : B1
+- 🇩🇪 **Allemand** : A1
 
 ---
 
@@ -157,4 +156,4 @@ Data/DevOps Engineer en reconversion après 19 ans de développement logiciel em
 
 ---
 
-*Mis à jour le 10/03/2026*
+*Mis à jour le 15/04/2026*

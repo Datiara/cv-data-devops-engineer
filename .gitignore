@@ -7,7 +7,8 @@ CV.md
 # CV avec données perso (HTML/PDF)
 CV.html
 CV_Nathalie_AVRIL*.pdf
-!CV_Nathalie_AVRIL*_public*.pdf
+# Seul le PDF public non-daté est tracké (les versions datées sont des archives locales)
+!CV_Nathalie_AVRIL_public.pdf
 
 
 # Métadonnées Windows/WSL

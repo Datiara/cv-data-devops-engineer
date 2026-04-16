@@ -8,19 +8,21 @@
 ## Structure du projet
 
 ```
-├── index.html          CV public FR (sans données perso) — hébergé via GitLab/GitHub Pages
-├── en.html             CV public EN (sans données perso) — hébergé via GitLab/GitHub Pages
-├── style.css           Feuille de style PDF (compact, A4 1 page)
-├── style-web.css       Feuille de style web (responsive mobile/desktop, + sélecteur FR/EN)
-├── images/             Photo, drapeaux, icônes
-├── CV_public.md        CV public FR en Markdown (lisible sur GitLab/GitHub)
-├── CV_public_en.md     CV public EN en Markdown (lisible sur GitLab/GitHub)
-├── .gitlab-ci.yml      Déploiement GitLab Pages
+├── index.html              CV public FR (version complète) — hébergé via GitLab/GitHub Pages
+├── en.html                 CV public EN (version complète) — hébergé via GitLab/GitHub Pages
+├── CV_public.html          CV public FR (version compactée 1 page) — pour génération PDF public
+├── style.css               Feuille de style PDF (compact, A4 1 page)
+├── style-web.css           Feuille de style web (responsive mobile/desktop, + sélecteur FR/EN)
+├── images/                 Photo, drapeaux, icônes
+├── CV_public.md            CV public FR en Markdown (lisible sur GitLab/GitHub)
+├── CV_public_en.md         CV public EN en Markdown (lisible sur GitLab/GitHub)
+├── CV_Nathalie_AVRIL_public.pdf  PDF public 1 page généré depuis CV_public.html
+├── .gitlab-ci.yml          Déploiement GitLab Pages
 │
-├── CV.html             CV privé avec données perso (non tracké)
-├── CV.md               CV privé en Markdown (non tracké)
-├── CV_Nathalie_AVRIL.pdf  PDF généré via weasyprint (non tracké)
-└── donnees_perso.md    Données personnelles (non tracké)
+├── CV.html                 CV privé avec données perso (non tracké)
+├── CV.md                   CV privé en Markdown (non tracké)
+├── CV_Nathalie_AVRIL.pdf   PDF privé généré via weasyprint (non tracké)
+└── donnees_perso.md        Données personnelles (non tracké)
 ```
 
 ### Consultation en ligne
@@ -31,15 +33,16 @@
 ### Génération des PDF
 
 ```bash
-# PDF privé (avec données perso) — depuis CV.html + style.css
+# PDF privé (avec données perso, 1 page) — depuis CV.html + style.css
 weasyprint CV.html CV_Nathalie_AVRIL.pdf
 
-# PDF public (sans données perso) — depuis index.html + style.css
-# index.html utilise style-web.css par défaut, il faut remplacer par style.css pour le PDF
-sed 's|style-web.css|style.css|' index.html > .CV_public_tmp.html
-weasyprint .CV_public_tmp.html CV_Nathalie_AVRIL_public.pdf
-rm .CV_public_tmp.html
+# PDF public (sans données perso, 1 page) — depuis CV_public.html + style.css
+weasyprint CV_public.html CV_Nathalie_AVRIL_public.pdf
 ```
+
+> **Note** : `index.html` / `en.html` sont les versions web complètes (plus aérées),
+> utilisées uniquement pour l'affichage en ligne. Le PDF public est généré depuis
+> `CV_public.html` (version compactée pour tenir sur 1 page A4).
 
 ---
 
