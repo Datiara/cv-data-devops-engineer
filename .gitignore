@@ -4,8 +4,15 @@ CV.md
 *.local.md
 .local-*
 
-# CV avec données perso (HTML/PDF)
+# Lettres de motivation (contiennent données perso)
+*Lettre de motivation*
+*Lettre de motivations*
+
+# CV avec données perso (HTML/PDF) — versions à coordonnées réelles, envoyées en direct
 CV.html
+CV_data_aws.html
+CV_data_integration.html
+CV_devops_sre.html
 CV_Nathalie_AVRIL*.pdf
 # Seul le PDF public non-daté est tracké (les versions datées sont des archives locales)
 !CV_Nathalie_AVRIL_public.pdf
@@ -16,3 +23,11 @@ CV_Nathalie_AVRIL*.pdf
 
 # Archives
 *.zip
+
+# Dossiers de candidature (données perso / documents entreprise)
+Algam/
+CGI/
+Fortil/
+
+# Captures d'écran de travail
+Capture d'*.png

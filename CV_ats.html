@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CV Nathalie AVRIL — Data / DevOps Engineer (version ATS)</title>
+<style>
+  /* Version ATS : single-column, identite visuelle conservee (teal, photo,
+     tags, bandeaux), flux de lecture lineaire = parsing ATS fiable.
+     Pas d'emoji ni de tableau. */
+  @page { size: A4; margin: 11mm 13mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 9.7pt; line-height: 1.4; color: #2c2c2c;
+  }
+  /* En-tete */
+  .header { display: flex; align-items: center; gap: 6mm; margin-bottom: 3mm; }
+  .photo {
+    width: 26mm; height: 26mm; border-radius: 50%; object-fit: cover;
+    border: 2.5px solid #5bbcb4; flex-shrink: 0;
+  }
+  .header h1 { font-size: 19pt; color: #5bbcb4; letter-spacing: 0.5px; }
+  .header .tagline { font-size: 13pt; color: #1a7a72; font-weight: 700; margin: 0.5mm 0 1.5mm 0; }
+  .header .contact { font-size: 8.5pt; color: #555; line-height: 1.5; }
+  .header .contact a { color: #3a9e96; text-decoration: none; }
+  /* Sections */
+  h2 {
+    color: #24998f; font-size: 10pt; margin: 3mm 0 1.2mm 0;
+    padding: 1mm 2.5mm; background: #b7e4e1; border-radius: 1.5mm;
+  }
+  .profile-text { font-size: 9pt; line-height: 1.45; color: #444; text-align: justify; }
+  /* Competences : une ligne par categorie */
+  .skill-line { font-size: 8.7pt; margin-bottom: 0.8mm; line-height: 1.35; }
+  .skill-line strong { color: #2c2c2c; }
+  .skill-line .tags { color: #555; }
+  /* Experiences */
+  .exp-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    background: #f0fafa; padding: 1mm 2mm; border-radius: 1mm;
+    margin: 2.5mm 0 1mm 0; border-left: 2.5px solid #5bbcb4;
+  }
+  .exp-header .poste { font-weight: 700; font-size: 9.5pt; color: #2c2c2c; }
+  .exp-header .entreprise { font-weight: 600; font-size: 9pt; color: #3a9e96; }
+  .exp-header .periode { font-size: 8pt; color: #777; white-space: nowrap; }
+  h4 { font-size: 9pt; color: #3a9e96; margin: 1.5mm 0 0.4mm 0; }
+  ul { padding-left: 4.5mm; margin-bottom: 0.5mm; }
+  li { font-size: 8.7pt; line-height: 1.32; margin-bottom: 0.4mm; }
+  .stack { font-size: 8pt; color: #96440e; font-weight: 700; margin: 0.3mm 0 0.5mm 0; }
+  /* Formation / certifs : lignes simples, pas de tableau */
+  .row { font-size: 8.7pt; margin-bottom: 0.6mm; }
+  .row .periode { color: #777; }
+  .row strong { color: #2c2c2c; }
+  .inline-sec { font-size: 8.7pt; margin-bottom: 0.5mm; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="images/Nathalie_Avril_4.jpg" alt="Nathalie Avril" class="photo">
+    <div>
+      <h1>Nathalie AVRIL</h1>
+      <div class="tagline">Data / DevOps Engineer</div>
+      <div class="contact">
+        Angers (49) | Permis B<br>
+        <a href="https://www.linkedin.com/in/nathalie-avril">linkedin.com/in/nathalie-avril</a>
+        &nbsp;·&nbsp; <a href="https://gitlab.com/datiara/public">gitlab.com/datiara</a>
+        &nbsp;·&nbsp; <a href="https://github.com/Datiara">github.com/Datiara</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>Profil</h2>
+  <p class="profile-text">
+    Data / DevOps Engineer combinant <strong>19 ans d'expertise en développement informatique embarqué industriel</strong>
+    et une spécialisation en <strong>data engineering &amp; platform engineering</strong>. Conception et mise en production de
+    <strong>systèmes d'information</strong> data fiables et scalables (ETL, structuration de la donnée, Kubernetes, GitOps),
+    avec un focus sur l'automatisation, l'observabilité et la sécurité.
+    Recueil des besoins métiers, collecte, stockage et acheminement de la donnée, nettoyage et mise à disposition
+    des données aux équipes métiers, suivi de production et maintenance, dans le respect du cycle de vie de la donnée (RGPD).
+    Profil hybride : rigueur industrielle, culture qualité, vision système.
+  </p>
+
+  <h2>Compétences</h2>
+  <div class="skill-line"><strong>Cloud &amp; Infrastructure :</strong> <span class="tags">Kubernetes, Docker, ArgoCD, Helm, Kustomize, Proxmox, Talos Linux</span></div>
+  <div class="skill-line"><strong>Data Engineering :</strong> <span class="tags">Python, Pandas, Prefect 3, SQL, ETL/ELT, Airbyte, structuration de la donnée, modélisation de données</span></div>
+  <div class="skill-line"><strong>Big Data :</strong> <span class="tags">PySpark, Hadoop, Hive, Snowflake, dbt (certifications)</span></div>
+  <div class="skill-line"><strong>Ingénierie et gouvernance de la donnée :</strong> <span class="tags">recueil des besoins métiers, collecte / stockage / acheminement de la donnée, nettoyage et qualité de la donnée, batchs et automatisation des traitements, mise à disposition aux équipes métiers, cycle de vie de la donnée (RGPD), suivi de production et maintenance, documentation (dictionnaire des variables), veille technologique</span></div>
+  <div class="skill-line"><strong>CI/CD &amp; GitOps :</strong> <span class="tags">GitLab CI/CD, ArgoCD, Sealed Secrets, pre-commit hooks</span></div>
+  <div class="skill-line"><strong>Observabilité :</strong> <span class="tags">Grafana, Loki, Promtail, logging structuré, alerting</span></div>
+  <div class="skill-line"><strong>Qualité &amp; Sécurité :</strong> <span class="tags">SAST (Semgrep, Bandit, Ruff), OAuth2, Azure AD, secret scanning, cybersécurité, RGPD</span></div>
+  <div class="skill-line"><strong>Bases de données (SQL / NoSQL) :</strong> <span class="tags">SQL Server, PostgreSQL, MariaDB, MongoDB, Redis, Elasticsearch, MinIO (S3)</span></div>
+  <div class="skill-line"><strong>Développement informatique :</strong> <span class="tags">Python, FastAPI, Frappe Framework, Streamlit, C, C++, C#, Java, PHP</span></div>
+  <div class="skill-line"><strong>Data Viz &amp; BI :</strong> <span class="tags">Matplotlib, Dash, Power BI, Looker Studio, Apache Superset</span></div>
+  <div class="skill-line"><strong>Automatisation low-code :</strong> <span class="tags">Power Automate, PowerApps, SharePoint, Microsoft 365</span></div>
+  <div class="skill-line"><strong>Systèmes :</strong> <span class="tags">Linux / Unix, Windows</span></div>
+
+  <h2>Expériences professionnelles</h2>
+
+  <div class="exp-header">
+    <span><span class="poste">Data / DevOps Engineer</span> — <span class="entreprise">Neolithe</span></span>
+    <span class="periode">Alternance · 2024 – 2026</span>
+  </div>
+
+  <h4>Pipelines ETL — Intégration ERP/MES</h4>
+  <ul>
+    <li><strong>Mise en production de 4 pipelines ETL bidirectionnels</strong> (Prefect 3) synchronisant ERP et MES ; retry/backoff, validation Pydantic, delta tracking.</li>
+    <li>Connecteurs API REST (OAuth2) et ODBC (SQL Server), logging structuré, alerting.</li>
+    <li>220+ tests unitaires et d'intégration (pytest, 69% de couverture), documentation, CI/CD GitLab.</li>
+  </ul>
+  <div class="stack">Stack : Python, Pandas, Prefect 3, SQL Server, Docker, Pydantic, GitLab CI/CD.</div>
+
+  <h4>Power Platform — Intégration des factures fournisseurs</h4>
+  <ul>
+    <li><strong>Solution d'intégration automatisée des factures fournisseurs</strong> : 9 flux Power Automate + 1 Canvas App (PowerApps) pour la gestion des litiges.</li>
+    <li>Chaîne de bout en bout : email, extraction PDF, SharePoint, SFTP, ERP Sylob, notifications Teams.</li>
+    <li>Industrialisation : environnements DEV/PROD, 21 variables, pipeline Power Platform CLI (pac), CI/CD GitLab.</li>
+  </ul>
+  <div class="stack">Stack : Power Automate/Apps/Platform CLI, SharePoint, Outlook, Teams, SFTP, GitLab CI/CD.</div>
+
+  <h4>Litho — Application de gestion de laboratoire</h4>
+  <ul>
+    <li>Application sur Frappe Framework (36 modèles de données), architecture EAV pour la structuration de la donnée et des formulaires dynamiques.</li>
+    <li>Intégration au système d'information via ODBC, parsers d'instruments de laboratoire, API BI (Superset, Power BI).</li>
+    <li>Microsoft Graph API via OAuth2 client_credentials (Azure AD), secrets chiffrés via SealedSecret. 210+ tests, CI/CD GitLab.</li>
+  </ul>
+  <div class="stack">Stack : Python, Frappe v15, MariaDB, Redis, Docker, GitLab CI/CD, Microsoft Graph API.</div>
+
+  <h4>Infrastructure Kubernetes — Platform Engineering</h4>
+  <ul>
+    <li><strong>Conception et déploiement d'une plateforme Kubernetes on-premise</strong> en approche GitOps (ArgoCD), Helm/Kustomize.</li>
+    <li>16 applications en production : data (Airbyte, Superset), IoT (ThingsBoard), BI, stockage (MinIO), observabilité (Grafana/Loki).</li>
+    <li>Opérateurs (CloudNativePG PostgreSQL, MariaDB, MinIO), stockage distribué (Longhorn), backup (Kopia), SealedSecrets (6 secrets × 2 environnements).</li>
+  </ul>
+  <div class="stack">Stack : Kubernetes, ArgoCD, Helm, Kustomize, Grafana, Loki, Sealed Secrets, PostgreSQL.</div>
+
+  <div class="exp-header">
+    <span><span class="poste">Data Engineer</span> — <span class="entreprise">Liora</span> · Projet Crypto-bot</span>
+    <span class="periode">Alternance · 2024 – 2026</span>
+  </div>
+  <ul>
+    <li>Plateforme de trading automatisé (FastAPI + Streamlit + PostgreSQL + MongoDB) sur cluster Kubernetes Talos Linux (3 nœuds) / Proxmox, accès Cloudflare Tunnel.</li>
+    <li>GitOps (ArgoCD) multi-environnement (dev/staging/prod), Sealed Secrets, monitoring Grafana/Loki/Promtail, CI/CD GitLab.</li>
+    <li>Architecture hybride on-premise + cloud — 97,5 % d'économie d'infrastructure.</li>
+  </ul>
+  <div class="stack">Stack : Python, FastAPI, Streamlit, PostgreSQL, MongoDB, MinIO, Kubernetes, ArgoCD, Kustomize.</div>
+
+  <div class="exp-header">
+    <span><span class="poste">Conceptrice / Développeuse Logiciel</span> — <span class="entreprise">Creative Eurecom</span></span>
+    <span class="periode">Saint-Barthélemy-d'Anjou (49) · 2007 – 2024</span>
+  </div>
+  <ul>
+    <li>Logiciels embarqués classe A/B en C, conformes ISO 13485 (dispositifs médicaux), temps réel ; applications débarquées (C++, C#, Java) : bancs de test, pilotage, application Android, analyse Python.</li>
+    <li>Intranet eGroupware (PHP, MySQL, Ajax) : devis, commandes, fournisseurs — utilisé 15 ans ; prise en main ERP Sylob (même ERP intégré via ETL chez Neolithe).</li>
+  </ul>
+
+  <div class="exp-header">
+    <span><span class="poste">Conceptrice / Développeuse Logiciel</span> — <span class="entreprise">Sojadis</span></span>
+    <span class="periode">Jallais (49) · 2005 – 2007</span>
+  </div>
+  <ul>
+    <li>Logiciels embarqués C sous OS temps réel, bancs de test automatique (LabView), site internet (PHP, MySQL).</li>
+  </ul>
+
+  <h2>Formation</h2>
+  <div class="row"><span class="periode">2024 – 2026</span> — <strong>Data Engineer par alternance (RNCP 38919, Niveau 7)</strong>, en cours — Liora (ex-DataScientest)</div>
+  <div class="row"><span class="periode">2004 – 2005</span> — <strong>DUT GEII par alternance</strong>, Option Réseaux Locaux Industriels — IUT de Nantes</div>
+  <div class="row"><span class="periode">2001 – 2004</span> — Niveau DEUG M.I.A.S., Option Physique — Université de Nantes</div>
+
+  <h2>Certifications</h2>
+  <div class="inline-sec">En cours : AWS Solutions Architect Associate — 2025 : AWS Cloud Quest Cloud Practitioner — 2024 : Cloud AWS, API REST (OpenClassrooms)</div>
+  <div class="inline-sec">33 certificats Liora (2024-2026) : Data Engineering, Big Data, DevOps, Développement, Data Visualisation, Machine Learning, RGPD &amp; AI Act</div>
+  <div class="inline-sec">2022 : FreeRTOS — 2021 : Dispositifs médicaux UE — 2012 : Sûreté de fonctionnement — 2023 : SST</div>
+
+  <h2>Langues &amp; Centres d'intérêt</h2>
+  <div class="inline-sec"><strong>Langues :</strong> Anglais B1 (documentation technique) · Allemand A1</div>
+  <div class="inline-sec"><strong>Centres d'intérêt :</strong> soubassophone, saxophone (DFE Saxophone et solfège) · course à pied, boxe thaï, taïso, trek</div>
+
+</body>
+</html>
