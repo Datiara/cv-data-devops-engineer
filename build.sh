@@ -38,4 +38,14 @@ if [ -f CV_public.html ]; then
   weasyprint CV_public.html CV_Nathalie_AVRIL_public.pdf
 fi
 
+# Lettres de motivation locales (LM_*.html → PDF daté), uniquement en build complet.
+if [ "$#" -eq 0 ]; then
+  for lm in LM_*.html; do
+    [ -e "$lm" ] || continue   # pas de fichier LM présent
+    out="${lm%.html}_${DATE}.pdf"
+    echo "→ $lm → $out"
+    weasyprint "$lm" "$out"
+  done
+fi
+
 echo "✓ PDF générés (${DATE})."

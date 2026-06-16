@@ -89,7 +89,7 @@ cloud) ; offre infra → `CV_devops_sre.html` ; dépôt sur un portail ATS → `
 ## Profil
 
 - **Reconversion** : Data/DevOps Engineer après 20 ans d'embarqué industriel
-- **Alternance** : Neolithe (sept 2024 → sept 2026), formation Liora (ex-DataScientest)
+- **Alternance** : Neolithe (sept 2024 → oct. 2026), formation Liora (ex-DataScientest)
 - **Certification visée** : RNCP 38919 "Data engineer" Niveau 7
 - **Poste visé** : Data / DevOps Engineer, avec différenciation industrie/IoT
 
