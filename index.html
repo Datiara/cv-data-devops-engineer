@@ -136,7 +136,7 @@
       <li><strong>Mise en production de 4 pipelines ETL bidirectionnels</strong> (Prefect 3) synchronisant ERP et MES en environnement industriel</li>
       <li>Fiabilisation : retry, backoff exponentiel, validation <strong>Pydantic</strong>, synchronisation incrémentale (<strong>delta tracking</strong>)</li>
       <li>Connecteurs <strong>API REST (OAuth2)</strong> et <strong>ODBC (SQL Server)</strong>, logging structuré, alerting</li>
-      <li><strong>220+ tests unitaires et d'intégration</strong> (pytest, 69% coverage), documentation Mermaid, CI/CD GitLab</li>
+      <li><strong>+ de 220 tests unitaires et d'intégration</strong> (pytest, 69% coverage), documentation Mermaid, CI/CD GitLab</li>
     </ul>
     <div class="stack">Stack : Python, Pandas, Prefect 3, SQL Server, Docker, Pydantic, GitLab CI/CD</div>
 
@@ -153,7 +153,7 @@
       <li>Application sur <strong>Frappe Framework</strong> (36 modèles de données), architecture <strong>EAV</strong></li>
       <li>Intégration ERP via ODBC, parsers instruments labo, API BI (Superset, Power BI)</li>
       <li>📧 Intégration <strong>Microsoft Graph API</strong> : override EmailAccount Frappe via <strong>OAuth2 client_credentials</strong> (Azure AD), contournement SMTP AUTH désactivé ; 25 tests unitaires, hook <code>after_migrate</code> idempotent, secrets via SealedSecret</li>
-      <li><strong>210+ tests</strong>, CI/CD GitLab (Ruff → build → test → release)</li>
+      <li><strong>+ de 210 tests</strong>, CI/CD GitLab (Ruff → build → test → release)</li>
     </ul>
     <div class="stack">Stack : Python, Frappe v15, MariaDB, Redis, Docker, GitLab CI/CD, Microsoft Graph API</div>
 
@@ -161,8 +161,8 @@
     <ul>
       <li><strong>Conception et déploiement d'une plateforme Kubernetes on-premise</strong> en approche <strong>GitOps (ArgoCD)</strong></li>
       <li><strong>16 applications en production</strong> : data (Airbyte, Superset), IoT (ThingsBoard), BI, stockage (MinIO), observabilité (Grafana/Loki)</li>
-      <li><strong>Observabilité centralisée</strong> (Grafana + Loki), stockage distribué (Longhorn), backup (Kopia)</li>
-      <li><strong>SealedSecrets Bitnami</strong> : cycle de vie des secrets chiffrés (rotation de nonce, scoping par namespace), <strong>6 secrets × 2 environnements</strong></li>
+      <li><strong>Observabilité centralisée</strong> (Grafana + Loki)</li>
+      <li><strong>SealedSecrets Bitnami</strong> : cycle de vie des secrets chiffrés (génération scriptée, scoping par namespace), <strong>6 secrets × 2 environnements</strong></li>
       <li>Standardisation des déploiements (Helm/Kustomize) → résilience et observabilité du SI</li>
     </ul>
     <div class="stack">Stack : Kubernetes, ArgoCD, Helm, Kustomize, Grafana, Loki, Sealed Secrets, PostgreSQL</div>
