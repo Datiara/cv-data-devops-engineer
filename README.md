@@ -88,7 +88,7 @@ cloud) ; offre infra → `CV_devops_sre.html` ; dépôt sur un portail ATS → `
 
 ## Profil
 
-- **Reconversion** : Data/DevOps Engineer après 20 ans d'embarqué industriel
+- **Reconversion** : Data/DevOps Engineer après 19 ans d'embarqué industriel
 - **Alternance** : Neolithe (sept 2024 → oct. 2026), formation Liora (ex-DataScientest)
 - **Certification visée** : RNCP 38919 "Data engineer" Niveau 7
 - **Poste visé** : Data / DevOps Engineer, avec différenciation industrie/IoT
@@ -127,7 +127,7 @@ GitLab (source, CI/CD, gestion de projet)
 
 ## Différenciation
 
-Profil rare : Data Engineer avec 20 ans d'embarqué industriel. Cibles :
+Profil rare : Data Engineer avec 19 ans d'embarqué industriel. Cibles :
 - **Industrie 4.0 / IoT** — ThingsBoard déjà déployé
 - **Entreprises manufacturières** en transformation digitale
 - **Éditeurs MES / ERP / SCADA** — intégration Sylob/Aveva déjà faite
